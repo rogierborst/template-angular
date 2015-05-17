@@ -1,9 +1,11 @@
 node_modules/
 bower_components/
-*.log
+.idea/
+.sass-cache/
+tmp/
 
+*.log
 Thumbs.db
 
 build/
 dist/
-.idea/
