@@ -12,7 +12,7 @@
         <!-- Your Stylesheet -->
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
+    <body ng-app="mainApp" ng-controller="MainCtrl">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -20,15 +20,24 @@
         <!-- Add your site or application content here -->
         <div class="container-fluid">
             <div class="page-header">
-                <h1>Angular Template</h1>
+                <h1>Hello {{test}}</h1>
             </div>
 
             <div class="row">
-                <div class="col-md-6">
-                    <p>Hello world! This is HTML5 Boilerplate!</p>
+                <div class="col-md-6 form-inline">
+                    <div class="form-group">
+                        <label for="name">Please enter your name</label>
+                        <input type="text" class="form-control" id="name" placeholder="name" ng-model="test">
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <p>Using Twitter Bootstrap CSS</p>
+                    <p>Using:</p>
+                    <ul>
+                        <li>HTML5 Boilerplate</li>
+                        <li>Twitter Bootstrap</li>
+                        <li>Angular</li>
+                        <li>Angular UI Router</li>
+                    </ul>
                 </div>
             </div>
         </div>
