@@ -15,7 +15,7 @@ var uglify = require('gulp-uglify');
 var watchify = require('watchify');
 
 // MAIN TASKS
-gulp.task('serve', ['sass', 'browserify'], function(){
+gulp.task('serve', ['html', 'sass', 'browserify'], function(){
     browserSync.init({
         server: {
             baseDir: 'dist'
@@ -72,7 +72,7 @@ gulp.task('browserify', function(){
     return bundle();
 });
 
-// ANGULAR TEMPLATES
+// HTML
 gulp.task('html', function(){
     gulp.src('./app/**/*.html')
         .pipe(gulp.dest('dist'))
@@ -84,7 +84,6 @@ var taskSass = function(){
     gulp.src('./app/sass/**/*.scss')
         .pipe(compass({
             config_file: path.join(process.cwd(), 'config.rb'),
-            //project: path.join(process.cwd(), '/app'),
             css: './dist/css',
             sass: './app/sass',
             sourcemap: true,
