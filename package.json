@@ -1,0 +1,17 @@
+{
+  "name": "template-angular",
+  "version": "1.0.0",
+  "description": "Boilerplate angular & gulp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "template",
+    "boilerplate",
+    "angular",
+    "gulp"
+  ],
+  "author": "Rogier Borst",
+  "license": "ISC"
+}
